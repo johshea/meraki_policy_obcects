@@ -27,6 +27,7 @@ To Activate Policy Objects in your Orginization:
 https://documentation.meraki.com/MX/Firewall_and_Traffic_Shaping/Network_Objects_Configuration_Guide
 
 Usage:
+
 Create Policy Objects
   python3 create_obj.py -k <apikey> -o <orgname>
   
