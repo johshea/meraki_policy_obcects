@@ -1,0 +1,10 @@
+{
+    "policy_groups": [
+        {
+            "name": "Management"
+        },
+        {
+            "name": "PublicWeb"
+        }
+    ]
+}

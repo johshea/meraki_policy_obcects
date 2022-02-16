@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Cisco-Meraki",
+        "category": "network",
+        "type": "fqdn",
+        "fqdn": "meraki.cisco.com"
+    },
+    {
+        "name": "mgmt",
+        "category": "network",
+        "type": "cidr",
+        "cidr": "192.168.1.0/24"
+    }
+
+]
