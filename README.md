@@ -27,7 +27,14 @@ To Activate Policy Objects in your Orginization:
 https://documentation.meraki.com/MX/Firewall_and_Traffic_Shaping/Network_Objects_Configuration_Guide
 
 Usage:
-python3 main.py -k apikey -o orginization_name
+Create Policy Objects
+  python3 create_obj.py -k <apikey> -o <orgname>
+  
+Create Policy Groups
+  python3 create_groups.py -k <apikey> -o <orgname>
+  
+Export Policy Objects
+  python3 export_pol.py -k <apikey> -o <orgname>
 
 LICENSE
 Provided under Cisco Sample Code License, for details see [LICENSE](LICENSE.md)
