@@ -28,13 +28,13 @@ https://documentation.meraki.com/MX/Firewall_and_Traffic_Shaping/Network_Objects
 
 Usage:
 
-Create Policy Objects
+Create Policy Objects:
   python3 create_obj.py -k <apikey> -o <orgname>
   
-Create Policy Groups
+Create Policy Groups:
   python3 create_groups.py -k <apikey> -o <orgname>
   
-Export Policy Objects
+Export Policy Objects:
   python3 export_pol.py -k <apikey> -o <orgname>
 
 LICENSE
