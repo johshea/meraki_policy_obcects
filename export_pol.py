@@ -7,7 +7,6 @@
 #
 #Requirments:
 #Python3 and the requests and pathlib libraries
-#pip3 install pathlib
 #pip3 install requests
 #
 #Usage:
@@ -22,11 +21,14 @@ import json, sys, getopt
 
 
 def getorgId(arg_orgname):
+    print(arg_orgname)
     org_response = requests.request("GET", f'{m_baseUrl}/organizations/', headers=m_headers)
     org = org_response.json()
     for row in org:
+        print(row['name'].lower())
         if row['name'].lower() == arg_orgname.lower():
             orgid = row['id']
+            print(orgid)
             print("Org" + " " + row['name'] + " " + "found.")
             return orgid
 
