@@ -21,28 +21,16 @@ import json, sys, getopt
 
 
 def getorgId(arg_orgname):
-    print("test point 1")
-    print(arg_orgname)
     org_response = requests.request("GET", f'{m_baseUrl}/organizations/', headers=m_headers)
-    print("test point 2")
-    print(org_response)
     org = org_response.json()
-    for row in org
+    for row in org:
         if row['name'].lower() == arg_orgname.lower():
-            print("test point 3")
-            print(row['name'].lower())
-            print(arg_orgname.lower())
             orgid = row['id']
-            print("test point 4")
-            print(orgid)
             print("Org" + " " + row['name'] + " " + "found.")
             return orgid
 
         else:
-            print("Exception: I did not find an Orginization matching" + " " + str(arg_orgname))
-            sys.exit(0)
-
-
+            print("Searching for org " + " " + str(arg_orgname))
 
 
 
