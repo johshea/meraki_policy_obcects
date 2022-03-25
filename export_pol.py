@@ -23,6 +23,7 @@ import json, sys, getopt
 def getorgId(arg_orgname):
     print(arg_orgname)
     org_response = requests.request("GET", f'{m_baseUrl}/organizations/', headers=m_headers)
+    print(org_response)
     org = org_response.json()
     for row in org:
         print(row['name'].lower())
