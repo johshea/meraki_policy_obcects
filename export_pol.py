@@ -30,7 +30,7 @@ def getorgId(arg_orgname):
             return orgid
 
         else:
-            print("Searching for org " + " " + str(arg_orgname))
+            print("Searching for Org " + " " + str(arg_orgname))
 
 
 
